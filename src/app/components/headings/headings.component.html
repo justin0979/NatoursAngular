@@ -1,0 +1,34 @@
+<ng-container [ngSwitch]="type">
+  <!-- PRIMARY HEADER -->
+  <h1
+    *ngSwitchCase="'primary'"
+    class="heading-primary {{ headingClass }}"
+  >
+    <span class="heading-primary-main">
+      <ng-content select=".primary"></ng-content>
+    </span>
+    <span class="heading-primary-sub">
+      <ng-content select=".subtitle"></ng-content>
+    </span>
+    <span class="heading-primary-main heading-primary-main-animated">
+      <ng-content select=".primary-animated"></ng-content>
+    </span>
+    <span class="heading-primary-sub heading-primary-sub-animated">
+      <ng-content select=".subtitle-animated"></ng-content>
+    </span>
+  </h1>
+  <!-- SECONDARY HEADER -->
+  <h2
+    *ngSwitchCase="'secondary'"
+    class="heading-secondary {{ headingClass }}"
+  >
+    <ng-content select=".secondary"></ng-content>
+  </h2>
+  <!-- TERTIARY HEADER -->
+  <h3
+    *ngSwitchCase="'tertiary'"
+    class="heading-tertiary {{ headingClass }}"
+  >
+    <ng-content select=".tertiary"></ng-content>
+  </h3>
+</ng-container>

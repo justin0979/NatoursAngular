@@ -1,0 +1,4 @@
+<a [href]="href" class="btn {{ btnClass }}" [ngClass]="getClass()">
+  {{ text }}
+  <span *ngIf="btnClass === 'btn-text'">&rarr;</span>
+</a>

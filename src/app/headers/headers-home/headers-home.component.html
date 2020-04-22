@@ -1,0 +1,24 @@
+<header id="header" class="header">
+  <div class="header__logo-box">
+    <img
+      src="assets/logo-white.png"
+      alt="White Logo"
+      class="header__logo"
+    />
+  </div>
+  <div class="header__text-box">
+    <app-headings type="primary">
+      <ng-container class="primary-animated">{{ title }}</ng-container>
+      <ng-container class="subtitle-animated">{{
+        subtitle
+      }}</ng-container>
+    </app-headings>
+
+    <app-buttons
+      href="#about"
+      btnClass="btn-white"
+      text="Discover Our Tours"
+      animated="true"
+    ></app-buttons>
+  </div>
+</header>

@@ -1,0 +1,33 @@
+<section id="about" class="section-about">
+  <div class="u-center-text u-margin-bottom-big">
+    <app-headings type="secondary">
+      <ng-container class="secondary"
+        >Exciting tours for adventurous people</ng-container
+      >
+    </app-headings>
+  </div>
+  <div class="row">
+    <div class="content">
+      <app-content
+        *ngFor="let c of content"
+        [title]="c.title"
+        [text]="c.text"
+        class="paragraph"
+      ></app-content>
+
+      <app-buttons
+        href="#features"
+        btnClass="btn-text"
+        text="LearnMore"
+      ></app-buttons>
+    </div>
+    <div class="composition">
+      <img
+        *ngFor="let image of images"
+        [src]="image.src"
+        [alt]="image.alt"
+        class="{{ image.class }}"
+      />
+    </div>
+  </div>
+</section>

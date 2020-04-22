@@ -1,6 +1,6 @@
 # NatoursAngular
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.0.6.
+Natours Project from JonaSchmedtmann's course "Advanced CSS and Sass: Flexbox, Grid, Animations and More!", but made with Angular, grid and flex (instead of just floats, transforms, and custom grid rows/columns).
 
 ## Development server
 

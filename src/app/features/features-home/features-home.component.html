@@ -1,0 +1,10 @@
+<section id="features" class="section-features">
+  <div class="rows">
+    <app-features-card
+      *ngFor="let f of features"
+      [title]="f.title"
+      [text]="f.text"
+      [icon]="f.icon"
+    ></app-features-card>
+  </div>
+</section>

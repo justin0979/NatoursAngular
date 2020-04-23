@@ -31,4 +31,11 @@
   >
     <ng-content select=".tertiary"></ng-content>
   </h3>
+  <!-- QUARTERNARY -->
+  <h4
+    *ngSwitchCase="'quarternary'"
+    class="heading-quarternary {{ headingClass }}"
+  >
+    <ng-content select=".quarternary"></ng-content>
+  </h4>
 </ng-container>

@@ -1,13 +1,27 @@
-<section id="tours" class="section-tours">
+<section class="section-tours">
   <div class="u-center-text u-margin-bottom-big">
     <app-headings type="secondary">
       <ng-container class="secondary">Most popular tours</ng-container>
     </app-headings>
   </div>
-  <div class="row">
+  <div id="tours" class="row">
     <app-tour-card
       *ngFor="let c of cards; let i = index"
+      [title]="c.tourTitle"
       [num]="(i + 1).toString()"
+      [length]="c.tourLength"
+      [guides]="c.tourGuides"
+      [slots]="c.tourSlots"
+      [accomodation]="c.tourAccomodation"
+      [difficulty]="c.tourDifficulty"
+      [price]="c.tourPrice"
     ></app-tour-card>
+  </div>
+  <div class="u-center-text u-margin-top-huge">
+    <app-buttons
+      href="#header"
+      btnClass="btn--green"
+      text="Discover all tours"
+    ></app-buttons>
   </div>
 </section>

@@ -2,15 +2,35 @@
   <div class="card__side--front card__side">
     <div class="card__picture card__picture--{{ num }}">&nbsp;</div>
     <div class="card__heading">
-      <app-headings type="tertiary">
-        <ng-container class="tertiary">Title</ng-container>
+      <app-headings type="quarternary">
+        <ng-container class="quarternary">
+          <span class="card__heading-span card__heading-span--{{ num }}">
+            {{ title }}
+          </span>
+        </ng-container>
       </app-headings>
     </div>
     <div class="card__details">
-      Details
+      <ul>
+        <li>{{ length }} day tour</li>
+        <li>Up to {{ slots }} people</li>
+        <li>{{ guides }} tour guides</li>
+        <li>Sleep in {{ accomodation }}</li>
+        <li>Difficulty: {{ difficulty }}</li>
+      </ul>
     </div>
   </div>
   <div class="card__side--back card__side card__side--back-{{ num }}">
-    Back
+    <div class="card__cta">
+      <div class="card__price-box">
+        <p class="card__price-only">Only</p>
+        <p class="card__price-value">{{ price }}</p>
+      </div>
+      <app-buttons
+        href="#tours"
+        btnClass="btn-white"
+        text="Book now!"
+      ></app-buttons>
+    </div>
   </div>
 </div>

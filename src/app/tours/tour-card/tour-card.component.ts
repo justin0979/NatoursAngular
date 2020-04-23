@@ -7,6 +7,13 @@ import { Component, OnInit, Input } from "@angular/core";
 })
 export class TourCardComponent implements OnInit {
   @Input() num: string;
+  @Input() title: string;
+  @Input() length: string;
+  @Input() slots: string;
+  @Input() accomodation: string;
+  @Input() difficulty: string;
+  @Input() guides: string;
+  @Input() price: string;
 
   constructor() {}
 

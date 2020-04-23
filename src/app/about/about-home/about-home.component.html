@@ -21,7 +21,7 @@
         text="LearnMore"
       ></app-buttons>
     </div>
-    <div class="composition">
+    <div class="composition" (mouseover)="mouseOver()">
       <img
         *ngFor="let image of images"
         [src]="image.src"

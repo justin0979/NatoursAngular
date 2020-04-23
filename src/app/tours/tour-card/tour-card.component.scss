@@ -1,0 +1,75 @@
+@import "~sass/variables";
+
+// FUNCTIONALITY
+.card {
+  perspective: 150rem;
+  position: relative;
+  height: 50rem;
+
+  &__side {
+    color: white;
+    font-size: 2rem;
+    height: 50rem;
+    width: 25rem;
+    backface-visibility: hidden;
+    transition: all 0.8s ease;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 3px;
+    box-shadow: 0 1.5rem 4rem rgba($color-black, 0.15);
+
+    &--front {
+      background-color: $color-white;
+    }
+
+    &--back {
+      &-1 {
+        background-image: linear-gradient(
+          to right bottom,
+          $color-secondary-light,
+          $color-secondary-dark
+        );
+      }
+      &-2 {
+        background-image: linear-gradient(
+          to right bottom,
+          $color-primary-light,
+          $color-primary-dark
+        );
+      }
+      &-3 {
+        background-image: linear-gradient(
+          to right bottom,
+          $color-tertiary-light,
+          $color-tertiary-dark
+        );
+      }
+
+      transform: rotateY(180deg);
+    }
+  }
+
+  &:hover &__side--front {
+    transform: rotateY(-180deg);
+  }
+
+  &:hover &__side--back {
+    transform: rotate(0);
+  }
+
+  // FRONT SIDE STYLING
+  &__picture {
+    &--1 {
+      background-image: url("/assets/nat-5.jpg");
+    }
+
+    &--2 {
+      background-image: url("/assets/nat-6.jpg");
+    }
+
+    &--3 {
+      background-image: url("/assets/nat-7.jpg");
+    }
+  }
+}

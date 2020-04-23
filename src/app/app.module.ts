@@ -6,6 +6,7 @@ import { HeadersModule } from "./headers/headers.module";
 import { ComponentsModule } from "./components/components.module";
 import { AboutModule } from "./about/about.module";
 import { FeaturesModule } from "./features/features.module";
+import { ToursModule } from "./tours/tours.module";
 
 @NgModule({
   declarations: [AppComponent],
@@ -15,6 +16,7 @@ import { FeaturesModule } from "./features/features.module";
     ComponentsModule,
     AboutModule,
     FeaturesModule,
+    ToursModule,
   ],
   providers: [],
   bootstrap: [AppComponent],

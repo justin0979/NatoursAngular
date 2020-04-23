@@ -43,4 +43,8 @@ export class AboutHomeComponent implements OnInit {
   constructor() {}
 
   ngOnInit(): void {}
+
+  mouseOver() {
+    console.log("hover");
+  }
 }

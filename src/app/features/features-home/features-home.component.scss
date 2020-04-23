@@ -18,9 +18,12 @@
   }
 
   .rows {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, 25rem);
+    display: flex;
+    flex-wrap: wrap;
     justify-content: space-evenly;
-    grid-gap: 6rem;
+    //    display: grid;
+    //    grid-template-columns: repeat(auto-fit, 25rem);
+    //    justify-content: space-evenly;
+    //    grid-gap: 6rem;
   }
 }

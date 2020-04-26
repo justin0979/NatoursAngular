@@ -1,0 +1,14 @@
+<div class="story">
+  <figure class="story__shape">
+    <img [src]="storyImage" alt="Person on a tour" class="story__img" />
+    <figcaption class="story__caption">{{ storyName }}</figcaption>
+  </figure>
+  <div class="story__text">
+    <app-headings type="tertiary" headingClass="u-margin-bottom-small">
+      <ng-container class="tertiary">{{ storyTitle }}</ng-container>
+    </app-headings>
+    <p>
+      {{ storyText }}
+    </p>
+  </div>
+</div>

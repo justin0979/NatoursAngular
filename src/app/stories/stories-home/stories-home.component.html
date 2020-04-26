@@ -1,0 +1,30 @@
+<section id="stories" class="section-stories">
+  <app-video
+    videoMp4="assets/video.mp4"
+    videoWebm="assets/video.webm"
+  ></app-video>
+  <div class="u-center-text u-margin-bottom-big">
+    <app-headings type="secondary">
+      <ng-container class="secondary"
+        >We make people genuinely happy</ng-container
+      >
+    </app-headings>
+  </div>
+  <div class="row">
+    <app-story
+      *ngFor="let s of stories"
+      [storyName]="s.storyName"
+      [storyImage]="s.storyImage"
+      [storyTitle]="s.storyTitle"
+      [storyText]="s.storyText"
+    ></app-story>
+  </div>
+
+  <div class="u-center-text u-margin-top-huge">
+    <app-buttons
+      btnClass="btn-text"
+      text="Read all stories"
+      href="#stories"
+    ></app-buttons>
+  </div>
+</section>

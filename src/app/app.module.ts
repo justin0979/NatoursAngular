@@ -7,6 +7,7 @@ import { ComponentsModule } from "./components/components.module";
 import { AboutModule } from "./about/about.module";
 import { FeaturesModule } from "./features/features.module";
 import { ToursModule } from "./tours/tours.module";
+import { StoriesModule } from "./stories/stories.module";
 
 @NgModule({
   declarations: [AppComponent],
@@ -17,6 +18,7 @@ import { ToursModule } from "./tours/tours.module";
     AboutModule,
     FeaturesModule,
     ToursModule,
+    StoriesModule,
   ],
   providers: [],
   bootstrap: [AppComponent],

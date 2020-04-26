@@ -6,8 +6,9 @@ import { Component, OnInit, Input } from "@angular/core";
   styleUrls: ["./headers-home.component.scss"],
 })
 export class HeadersHomeComponent implements OnInit {
-  @Input() title: string;
-  @Input() subtitle: string;
+  @Input() title = "Add Your Main Title";
+  @Input() subtitle = "And Your Sub Title";
+  @Input() btnText = "Add your stuff here too";
 
   constructor() {}
 
